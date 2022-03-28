@@ -68,7 +68,7 @@ class LocationTestClass(TestCase):
     test class for Locations model
     '''
     def setUp(self):
-        self.new_location = Location(city='Tokyo', country='Japan')
+        self.new_location = Location(city='kinshasa', country='DRC')
         self.new_location.save_location()
 
     def test_save_location(self):
@@ -80,6 +80,6 @@ class LocationTestClass(TestCase):
         self.assertTrue(len(Location.objects.all()) == 0)
 
     def test_update_location(self):
-        update_location = Location.update_location('Japan', 'Shree')
+        update_location = Location.update_location('DRC', 'Shree')
         self.assertEqual(update_location.city, 'Shree')
         
