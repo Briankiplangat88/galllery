@@ -53,7 +53,7 @@ class Image(models.Model):
             self.save()
             return self
         except self.DoesNotExist:
-            print('Image entered does not exist.Please enter another image.')
+            print('Image  does not exist.Please enter another image.')
 class Category(models.Model):
     '''
     model to handle category
