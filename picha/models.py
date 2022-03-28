@@ -117,7 +117,7 @@ class Location(models.Model):
             l_update.save()
             return l_update
         except Location.DoesNotExist:
-            print('Location not found. you need to enter another location.')
+            print('Location not found.You need to enter another location.')
     
 
 
