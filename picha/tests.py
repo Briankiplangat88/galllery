@@ -33,12 +33,7 @@ class ImageTestClass(TestCase):
         self.new_picture.delete_image()
         self.assertTrue(len(Image.objects.all()) == 0)
         
-    # def test_search_image(self):
-    #     '''
-    #     test method to ensure correct searching of an multiple image instances by category
-    #     '''
-    #     self.new_picture = Image.search_by_category(self.new_picture.category)
-
+    
     def test_filter_by_location(self):
         self.new_picture = Image.filter_by_location(self.new_picture.location)
         print(self.new_picture)
