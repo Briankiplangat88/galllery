@@ -30,8 +30,7 @@ class Image(models.Model):
             picha = cls.objects.filter(category__icontains=search_term)
             return picha
                 
-            # result = cls.objects.filter(category__name__contains=category) #images assoc w/ this cat
-            # return result
+            
             
     @classmethod
     def filter_by_location(cls ,location):
