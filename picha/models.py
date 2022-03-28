@@ -84,7 +84,7 @@ class Category(models.Model):
             c_update.save()
             return c_update
         except Category.DoesNotExist:
-            print('Category entered does not exist')
+            print('Category does not exist')
 
     
 class Location(models.Model):
