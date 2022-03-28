@@ -19,7 +19,7 @@ def search_results(request):
         return render(request, 'search.html',{"message":message,"images": results})
 
     else:
-        message = "You haven't searched for any term"
+        message = "no search so far"
         return render(request, 'search.html',{"message":message})
 def image(request,image_id):
     try:
