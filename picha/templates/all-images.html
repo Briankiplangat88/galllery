@@ -4,13 +4,13 @@
         $('#myInput').trigger('focus')
     })
 </script>
-<h1 class="text-center" style="color:#dbd8f0;">All gallery</h1>
+<h1 class="text-center" style="color:burlywood;">All gallery</h1>
 <div class="container">
     <!-- Looping through category  -->
     {% for i in image %}
 
 
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="border:solid 5px #dbd8f0;border-radius: 25px;">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="border:solid 5px burlywood;border-radius: 25px;">
         <a href="#" class="btn btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
             <img src="{{i.img.url}}" class="img-responsive" alt="Image" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> </a>
     </div>
@@ -20,15 +20,15 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: #dbd8f0;"> {{i.name}} </h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle" style="color:burlywood;"> {{i.name}} </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
                 </div>
                     <div class="modal-body col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <img src=" {{i.img.url}} " class="img-responsive " alt="Image " class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> </a>
-                        <h2 class="text-center " style="color: #dbd8f0; "> {{ i.name }} </h2>
+                        <h2 class="text-center " style="color:burlywood; "> {{ i.name }} </h2>
                         <p>{{i.description}}</p>
-                        <p style="color: #dbd8f0;">Location: {{i.location}}</p>
+                        <p style="color: burlywood;">Location: {{i.location}}</p>
                     </div>
                 <div class="modal-footer ">
                     <button onclick="myFunction()">Copy Text</button>
